@@ -1,0 +1,6 @@
+for Output in `ls  *s.pdf`
+do
+    name=`echo ${Output%%s*}`
+    name=$((26 - name))
+    mv $Output $name.pdf
+done
